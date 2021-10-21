@@ -2,8 +2,8 @@ public class Pz3 {
     public static void main(String[] args) {
         double km = (100 * 1.609344);
         System.out.println(km);
-        int highestscore = 50;
-        if (highestscore == 50) {
+        int highestScore = 50;
+        if (highestScore == 50) {
             System.out.println("this is an expresion");
         }
         int myVariable = 50;
@@ -18,13 +18,13 @@ public class Pz3 {
         System.out.println("this is another one");
         boolean gameOver = true;
         calculateScore(true,800,5,100);
-        int highScorePosition = scorecalc(1500);
+        int highScorePosition = scoreCalc(1500);
         displayHighScorePosition("bob", highScorePosition);
-        highScorePosition = scorecalc(900);
+        highScorePosition = scoreCalc(900);
         displayHighScorePosition("tim", highScorePosition);
-        highScorePosition = scorecalc(400);
+        highScorePosition = scoreCalc(400);
         displayHighScorePosition("tom", highScorePosition);
-        highScorePosition = scorecalc(50);
+        highScorePosition = scoreCalc(50);
         displayHighScorePosition("natan", highScorePosition);
     }
 
@@ -34,7 +34,7 @@ public class Pz3 {
                 " on the high score table");
     }
 
-    public static int scorecalc(int playerScore) {
+    public static int scoreCalc(int playerScore) {
         if (playerScore > 1000) {
             return 1;
         } else if (playerScore < 1000 && playerScore > 500) {
@@ -58,15 +58,15 @@ public class Pz3 {
             System.out.println("got here");
         }
         boolean newGameOver = false;
-        int Score = 10000;
-        int LevelCompleted = 8;
-        int Bonus = 200;
+        int newScore = 10000;
+        int newLevelCompleted = 8;
+        int newBonus = 200;
         if (newGameOver) {
-            int FinalScore = Score + (LevelCompleted * Bonus);
+            int FinalScore = newScore + (newLevelCompleted * newBonus);
             FinalScore += 2000;
             System.out.println("your final score =" + FinalScore);
         } else if (!newGameOver) {
-            int FinalScore = Score + (LevelCompleted * Bonus) + 1000;
+            int FinalScore = newScore + (newLevelCompleted * newBonus) + 1000;
             System.out.println("level completed final score =" + FinalScore);
         }
         if (gameOver) {
