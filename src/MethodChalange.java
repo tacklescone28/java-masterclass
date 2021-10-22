@@ -3,6 +3,7 @@ public class MethodChalange {
         checkNumber(-10);
         checkNumber(5);
         checkNumber(0);
+        toMilesPerH(10);
     }
 
     public static void checkNumber(int number) {
@@ -18,7 +19,8 @@ public class MethodChalange {
     public static long toMilesPerH(double kmph) {
         if(kmph < 0){
             return -1;
+        }else {
+            return Math.round(kmph / 1.609);
         }
-        return Math.round(kmph / 1.609);
     }
 }
