@@ -27,14 +27,14 @@ public class MegaBytes {
         }
     }
 
-    public static void isLeapYear(int year) {
-        if (year < 1 || year > 9999) {
-            System.out.println("falsee");
-        } else if (year / 4) {
-            System.out.println("true");
-        } else if (year / 100) ;{
-            System.out.println("true");
-        }
+//public static void isLeapYear(int year) {
+  //      if (year < 1 || year > 9999) {
+    //        System.out.println("falsee");
+      //  } else if (year / 4) {
+        //    System.out.println("true");
+       // } else if (year / 100) ;{
+     //       System.out.println("true");
+        //}
 
-    }
+    //}
 }
